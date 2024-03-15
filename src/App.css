@@ -1,9 +1,73 @@
 /* Add styling for your page here */
 
-.App {
-
+.App { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 85rem;
+    margin: auto;
+    .main_content {
+        /* margin-left: 5%; */
+        width: 70%;
+        .items {
+            width: 50rem;
+        }
+    }
+    .cart {
+        width: 20%;
+    }
 }
 
 .BakeryItem {
-  
+    border-radius: 25px;
+    background-color: #f6f7fa;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+    justify-content: space-between;
+    align-content: center;
+    .item_pic {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        overflow: clip;
+        img {
+            width: 120%;
+            justify-self: center;
+        }
+    }
+    .item_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        height: 30%;
+
+        .header {
+            width: 90%;
+            margin-left: 1rem;
+            .name {
+                font-weight: 600;
+            }
+            p {
+                margin: 0 0 0 0;
+            }
+        }
+
+        .footer {
+            width: 90%;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.BakeryItem:hover {
+    background-color: #e5e7eb;
 }
