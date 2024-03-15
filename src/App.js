@@ -17,13 +17,14 @@ function App() {
 
   const [totalPrice, setPrice] = useState(0);
   const [itemList, addItem] = useState([]);
-  const [cartDict, addCart] = useState({});
+  // const [cartDict, addCart] = useState({});
   const add_to_cart_price = (item_price) => {setPrice(totalPrice + item_price)};
   const add_to_cart_item = (item_name) => {addItem(itemList.concat(item_name))}
   const add_to_cart = (item_name, item_price) => {
     add_to_cart_price(item_price);
     add_to_cart_item(item_name);
   };
+
   // const add_cart_dict = (item_ind) => {
   //   const prevCart = {...cartDict};
   //   const item_count = prevCart[item_ind] || 0;
